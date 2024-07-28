@@ -29,6 +29,7 @@ pub fn generate(
     children: usize,
     max_long_angle_divergence: f64,
     max_short_angle_divergence: f64,
+    short_branch_frequency: usize,
     paint: Paint,
 ) -> Vec<u8> {
     let mut seed_byes = [0u8; 8];
@@ -43,7 +44,7 @@ pub fn generate(
         children,
         max_long_angle_divergence,
         max_short_angle_divergence,
-        short_branch_frequency: 20,
+        short_branch_frequency,
         paint: match paint {
             Paint::Age => arw::Paint::Age,
             Paint::CumulativeAge => arw::Paint::CumulativeAge,
