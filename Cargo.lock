@@ -4,8 +4,9 @@ version = 3
 
 [[package]]
 name = "angled-random-walker"
-version = "0.4.1"
-source = "git+https://github.com/bharadwaj-raju/angled-random-walker.git#e28f44da13f1b3fe7c07ea18b57586dbad69ab21"
+version = "0.4.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "87028310f1494000e96967e069cd09f2f583197604c5c38d9999de9c4d3ee1ad"
 dependencies = [
  "rand",
  "rand_xoshiro",
@@ -16,7 +17,6 @@ name = "angled-random-walker-demo-wasm"
 version = "0.1.0"
 dependencies = [
  "angled-random-walker",
- "getrandom",
  "rand",
  "rand_xoshiro",
  "stackblur-iter",
@@ -36,19 +36,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
-name = "getrandom"
-version = "0.2.15"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c4567c8db10ae91089c99af84c68c38da3ec2f087c3f82960bcdbf3656b6f4d7"
-dependencies = [
- "cfg-if",
- "js-sys",
- "libc",
- "wasi",
- "wasm-bindgen",
-]
-
-[[package]]
 name = "imgref"
 version = "1.10.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -62,21 +49,6 @@ checksum = "58112733c0ee178b66dceba49e0445d0b293268719de579d2c7dd4c2290976aa"
 dependencies = [
  "imgref",
 ]
-
-[[package]]
-name = "js-sys"
-version = "0.3.69"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "29c15563dc2726973df627357ce0c9ddddbea194836909d655df6a75d2cf296d"
-dependencies = [
- "wasm-bindgen",
-]
-
-[[package]]
-name = "libc"
-version = "0.2.155"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "97b3888a4aecf77e811145cadf6eef5901f4782c53886191b2f693f24761847c"
 
 [[package]]
 name = "log"
@@ -158,12 +130,6 @@ name = "unicode-ident"
 version = "1.0.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3354b9ac3fae1ff6755cb6db53683adb661634f67557942dea4facebec0fee4b"
-
-[[package]]
-name = "wasi"
-version = "0.11.0+wasi-snapshot-preview1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9c8d87e72b64a3b4db28d11ce29237c246188f4f51057d65a7eab63b7987e423"
 
 [[package]]
 name = "wasm-bindgen"
